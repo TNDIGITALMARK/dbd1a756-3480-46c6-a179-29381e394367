@@ -30,7 +30,7 @@ export function VideoCard({ video, size = 'medium' }: VideoCardProps) {
     >
       <Link href={`/watch?v=${video.id}`}>
         {/* Thumbnail */}
-        <div className="relative aspect-video bg-gray-200 rounded-lg overflow-hidden mb-3">
+        <div className="relative aspect-video bg-muted rounded-lg overflow-hidden mb-3">
           <img
             src={video.thumbnail}
             alt={video.title}
@@ -68,10 +68,10 @@ export function VideoCard({ video, size = 'medium' }: VideoCardProps) {
             <h3 className="font-medium text-sm leading-tight mb-1 line-clamp-2 group-hover:text-blue-600">
               {video.title}
             </h3>
-            <p className="text-sm text-gray-600 mb-1 hover:text-gray-800">
+            <p className="text-sm text-muted-foreground mb-1 hover:text-foreground">
               {video.channelName}
             </p>
-            <div className="flex items-center text-sm text-gray-500 space-x-1">
+            <div className="flex items-center text-sm text-muted-foreground space-x-1">
               <span>{video.views}</span>
               <span>•</span>
               <span>{video.timeAgo}</span>

@@ -26,7 +26,7 @@ export default function Home() {
                   key={category.name}
                   variant="outline"
                   size="sm"
-                  className="bg-gray-100 hover:bg-gray-200 rounded-lg px-4 py-2 whitespace-nowrap"
+                  className="bg-muted hover:bg-muted/80 rounded-lg px-4 py-2 whitespace-nowrap"
                 >
                   {category.icon} {category.name}
                 </Button>

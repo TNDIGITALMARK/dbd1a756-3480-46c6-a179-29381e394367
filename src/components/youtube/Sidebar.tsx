@@ -46,7 +46,7 @@ export function Sidebar({ isOpen, currentPath = '/' }: SidebarProps) {
         variant="ghost"
         className={cn(
           "w-full justify-start h-10 px-3 text-sm font-normal",
-          active && "bg-gray-100 hover:bg-gray-100"
+          active && "bg-muted hover:bg-muted"
         )}
       >
         <Icon className="w-5 h-5 mr-6" />
@@ -97,7 +97,7 @@ export function Sidebar({ isOpen, currentPath = '/' }: SidebarProps) {
 
           {/* Library */}
           <div className="space-y-1">
-            <h3 className="px-3 text-sm font-medium text-gray-500 mb-2">Library</h3>
+            <h3 className="px-3 text-sm font-medium text-muted-foreground mb-2">Library</h3>
             {libraryItems.map((item) => (
               <MenuItem key={item.label} {...item} />
             ))}
@@ -107,7 +107,7 @@ export function Sidebar({ isOpen, currentPath = '/' }: SidebarProps) {
 
           {/* Explore */}
           <div className="space-y-1">
-            <h3 className="px-3 text-sm font-medium text-gray-500 mb-2">Explore</h3>
+            <h3 className="px-3 text-sm font-medium text-muted-foreground mb-2">Explore</h3>
             {exploreItems.map((item) => (
               <MenuItem key={item.label} {...item} />
             ))}

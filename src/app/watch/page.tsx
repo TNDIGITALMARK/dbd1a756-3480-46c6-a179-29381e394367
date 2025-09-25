@@ -63,13 +63,13 @@ export default function WatchPage() {
                 </Avatar>
                 <div>
                   <p className="font-medium">{currentVideo.channelName}</p>
-                  <p className="text-sm text-gray-600">{currentVideo.subscribers} subscribers</p>
+                  <p className="text-sm text-muted-foreground">{currentVideo.subscribers} subscribers</p>
                 </div>
                 <Button
                   onClick={() => setIsSubscribed(!isSubscribed)}
                   className={`rounded-full px-6 ${
                     isSubscribed
-                      ? 'bg-gray-100 text-black hover:bg-gray-200'
+                      ? 'bg-muted text-muted-foreground hover:bg-muted/80'
                       : 'bg-black text-white hover:bg-gray-800'
                   }`}
                 >
@@ -79,7 +79,7 @@ export default function WatchPage() {
 
               <div className="flex items-center space-x-2">
                 {/* Like/Dislike */}
-                <div className="flex bg-gray-100 rounded-full">
+                <div className="flex bg-muted rounded-full">
                   <Button
                     variant="ghost"
                     size="sm"
@@ -101,37 +101,37 @@ export default function WatchPage() {
                 </div>
 
                 {/* Share */}
-                <Button variant="ghost" size="sm" className="bg-gray-100 rounded-full px-4">
+                <Button variant="ghost" size="sm" className="bg-muted rounded-full px-4">
                   <Share className="w-5 h-5 mr-2" />
                   Share
                 </Button>
 
                 {/* Download */}
-                <Button variant="ghost" size="sm" className="bg-gray-100 rounded-full px-4">
+                <Button variant="ghost" size="sm" className="bg-muted rounded-full px-4">
                   <Download className="w-5 h-5 mr-2" />
                   Download
                 </Button>
 
                 {/* More */}
-                <Button variant="ghost" size="sm" className="bg-gray-100 rounded-full p-2">
+                <Button variant="ghost" size="sm" className="bg-muted rounded-full p-2">
                   <MoreHorizontal className="w-5 h-5" />
                 </Button>
               </div>
             </div>
 
             {/* View Count and Upload Date */}
-            <div className="flex items-center text-sm text-gray-600 space-x-2">
+            <div className="flex items-center text-sm text-muted-foreground space-x-2">
               <span>{currentVideo.views}</span>
               <span>•</span>
               <span>{currentVideo.timeAgo}</span>
             </div>
 
             {/* Description */}
-            <div className="bg-gray-100 rounded-lg p-4">
+            <div className="bg-muted rounded-lg p-4">
               <p className="text-sm leading-relaxed">
                 {currentVideo.description}
               </p>
-              <Button variant="ghost" size="sm" className="mt-2 text-sm text-gray-600 p-0">
+              <Button variant="ghost" size="sm" className="mt-2 text-sm text-muted-foreground p-0">
                 Show more
               </Button>
             </div>
@@ -180,12 +180,12 @@ export default function WatchPage() {
                     <div className="flex-1 space-y-1">
                       <div className="flex items-center space-x-2 text-sm">
                         <span className="font-medium">@commenter{comment}</span>
-                        <span className="text-gray-500">2 days ago</span>
+                        <span className="text-muted-foreground">2 days ago</span>
                       </div>
                       <p className="text-sm">
                         Great video! Really enjoyed the content and learned a lot from it.
                       </p>
-                      <div className="flex items-center space-x-4 text-sm text-gray-600">
+                      <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                         <Button variant="ghost" size="sm" className="p-0 h-auto">
                           <ThumbsUp className="w-4 h-4 mr-1" />
                           12

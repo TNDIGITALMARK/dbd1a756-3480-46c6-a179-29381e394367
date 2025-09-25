@@ -18,7 +18,7 @@ export const mockVideos: Video[] = [
   {
     id: "1",
     title: "Experience the Ultimate Freedom: Skydiving Adventure",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-skydiving.png",
     channelName: "Adventure Seekers",
     channelAvatar: "/api/placeholder/36/36",
     views: "1.2M views",
@@ -33,7 +33,7 @@ export const mockVideos: Video[] = [
   {
     id: "2",
     title: "Exploring Ancient Ruins",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-ancient-ruins.png",
     channelName: "History Channel",
     channelAvatar: "/api/placeholder/36/36",
     views: "856K views",
@@ -48,7 +48,7 @@ export const mockVideos: Video[] = [
   {
     id: "3",
     title: "Cooking Masterclass: Italian Pasta",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-pasta-cooking.png",
     channelName: "Chef's Table",
     channelAvatar: "/api/placeholder/36/36",
     views: "2.1M views",
@@ -63,7 +63,7 @@ export const mockVideos: Video[] = [
   {
     id: "4",
     title: "Top 10 Guitar Riffs",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-guitar-riffs.png",
     channelName: "Music Masters",
     channelAvatar: "/api/placeholder/36/36",
     views: "500K views",
@@ -78,7 +78,7 @@ export const mockVideos: Video[] = [
   {
     id: "5",
     title: "Coffee Brewing Techniques",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-coffee-brewing.png",
     channelName: "Caffeine Culture",
     channelAvatar: "/api/placeholder/36/36",
     views: "750K views",
@@ -93,7 +93,7 @@ export const mockVideos: Video[] = [
   {
     id: "6",
     title: "Wildlife Photography Tips",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-wildlife-photography.png",
     channelName: "Nature's Lens",
     channelAvatar: "/api/placeholder/36/36",
     views: "1.8M views",
@@ -108,7 +108,7 @@ export const mockVideos: Video[] = [
   {
     id: "7",
     title: "Space Exploration Documentary",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-space-exploration.png",
     channelName: "Cosmos Today",
     channelAvatar: "/api/placeholder/36/36",
     views: "3.2M views",
@@ -123,7 +123,7 @@ export const mockVideos: Video[] = [
   {
     id: "8",
     title: "Tech Review: Latest Smartphones",
-    thumbnail: "/api/placeholder/320/180",
+    thumbnail: "/generated/thumbnail-tech-review.png",
     channelName: "Tech Central",
     channelAvatar: "/api/placeholder/36/36",
     views: "925K views",
