@@ -45,11 +45,11 @@ export function Sidebar({ isOpen, currentPath = '/' }: SidebarProps) {
       <Button
         variant="ghost"
         className={cn(
-          "w-full justify-start h-10 px-3 text-sm font-normal",
-          active && "bg-muted hover:bg-muted"
+          "w-full justify-start h-10 px-3 text-sm font-normal text-foreground hover:bg-muted/50",
+          active && "bg-muted hover:bg-muted text-foreground"
         )}
       >
-        <Icon className="w-5 h-5 mr-6" />
+        <Icon className="w-5 h-5 mr-6 text-current" />
         {label}
       </Button>
     </Link>
@@ -57,23 +57,23 @@ export function Sidebar({ isOpen, currentPath = '/' }: SidebarProps) {
 
   if (!isOpen) {
     return (
-      <aside className="fixed left-0 top-14 w-18 h-[calc(100vh-56px)] bg-white border-r border-gray-200 z-40">
+      <aside className="fixed left-0 top-14 w-18 h-[calc(100vh-56px)] bg-background border-r border-border z-40">
         <div className="flex flex-col items-center py-4 space-y-4">
           <Link href="/">
-            <Button variant="ghost" size="sm" className="flex-col h-16 w-16">
-              <Home className="w-5 h-5 mb-1" />
+            <Button variant="ghost" size="sm" className="flex-col h-16 w-16 text-foreground hover:bg-muted/50">
+              <Home className="w-5 h-5 mb-1 text-current" />
               <span className="text-xs">Home</span>
             </Button>
           </Link>
           <Link href="/trending">
-            <Button variant="ghost" size="sm" className="flex-col h-16 w-16">
-              <Compass className="w-5 h-5 mb-1" />
+            <Button variant="ghost" size="sm" className="flex-col h-16 w-16 text-foreground hover:bg-muted/50">
+              <Compass className="w-5 h-5 mb-1 text-current" />
               <span className="text-xs">Trending</span>
             </Button>
           </Link>
           <Link href="/subscriptions">
-            <Button variant="ghost" size="sm" className="flex-col h-16 w-16">
-              <PlaySquare className="w-5 h-5 mb-1" />
+            <Button variant="ghost" size="sm" className="flex-col h-16 w-16 text-foreground hover:bg-muted/50">
+              <PlaySquare className="w-5 h-5 mb-1 text-current" />
               <span className="text-xs">Subscriptions</span>
             </Button>
           </Link>
@@ -83,7 +83,7 @@ export function Sidebar({ isOpen, currentPath = '/' }: SidebarProps) {
   }
 
   return (
-    <aside className="fixed left-0 top-14 w-60 h-[calc(100vh-56px)] bg-white border-r border-gray-200 z-40">
+    <aside className="fixed left-0 top-14 w-60 h-[calc(100vh-56px)] bg-background border-r border-border z-40">
       <ScrollArea className="h-full">
         <div className="p-3">
           {/* Main Menu */}

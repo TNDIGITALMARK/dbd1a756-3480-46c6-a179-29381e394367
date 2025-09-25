@@ -17,7 +17,7 @@ export default function Home() {
               <Button
                 variant="default"
                 size="sm"
-                className="bg-black text-white hover:bg-gray-800 rounded-lg px-4 py-2 whitespace-nowrap"
+                className="bg-foreground text-background hover:bg-foreground/90 rounded-lg px-4 py-2 whitespace-nowrap"
               >
                 All
               </Button>
@@ -38,7 +38,7 @@ export default function Home() {
 
         {/* Trending Section */}
         <div className="mb-8">
-          <h2 className="text-lg font-semibold mb-4">Trending</h2>
+          <h2 className="text-lg font-semibold mb-4 text-foreground">Trending</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {mockVideos.slice(0, 5).map((video) => (
               <VideoCard key={video.id} video={video} size="small" />
@@ -48,7 +48,7 @@ export default function Home() {
 
         {/* Recommended Section */}
         <div className="mb-8">
-          <h2 className="text-lg font-semibold mb-4">Recommended for you</h2>
+          <h2 className="text-lg font-semibold mb-4 text-foreground">Recommended for you</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {mockVideos.slice(2, 8).map((video) => (
               <VideoCard key={video.id} video={video} size="small" />
@@ -58,7 +58,7 @@ export default function Home() {
 
         {/* All Videos Grid */}
         <div>
-          <h2 className="text-lg font-semibold mb-4">Latest Videos</h2>
+          <h2 className="text-lg font-semibold mb-4 text-foreground">Latest Videos</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {mockVideos.map((video) => (
               <VideoCard key={video.id} video={video} size="small" />

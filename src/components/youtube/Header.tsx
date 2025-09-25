@@ -14,7 +14,7 @@ export function Header({ onMenuClick }: HeaderProps) {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 h-14">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border h-14">
       <div className="flex items-center justify-between h-full px-4">
         {/* Left section - Menu and Logo */}
         <div className="flex items-center space-x-4">
@@ -24,13 +24,13 @@ export function Header({ onMenuClick }: HeaderProps) {
             className="p-2"
             onClick={onMenuClick}
           >
-            <Menu className="w-5 h-5" />
+            <Menu className="w-5 h-5 text-foreground" />
           </Button>
           <Link href="/" className="flex items-center space-x-1">
             <div className="bg-red-600 text-white px-2 py-1 rounded text-sm font-bold">
               📺
             </div>
-            <span className="text-xl font-bold text-gray-900">STREAMIFY</span>
+            <span className="text-xl font-bold text-foreground">STREAMIFY</span>
           </Link>
         </div>
 
@@ -43,14 +43,14 @@ export function Header({ onMenuClick }: HeaderProps) {
                 placeholder="Search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full h-10 pl-4 pr-12 border border-gray-300 rounded-l-full focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                className="w-full h-10 pl-4 pr-12 border border-border rounded-l-full focus:border-primary focus:ring-1 focus:ring-primary bg-background text-foreground"
               />
             </div>
             <Button
               variant="outline"
-              className="h-10 px-6 border-l-0 rounded-r-full border-gray-300 bg-gray-50 hover:bg-gray-100"
+              className="h-10 px-6 border-l-0 rounded-r-full border-border bg-muted hover:bg-muted/80"
             >
-              <Search className="w-5 h-5" />
+              <Search className="w-5 h-5 text-muted-foreground" />
             </Button>
           </div>
         </div>
@@ -59,14 +59,14 @@ export function Header({ onMenuClick }: HeaderProps) {
         <div className="flex items-center space-x-2">
           <Link href="/upload">
             <Button variant="ghost" size="sm" className="p-2">
-              <Video className="w-5 h-5" />
+              <Video className="w-5 h-5 text-foreground" />
             </Button>
           </Link>
           <Button variant="ghost" size="sm" className="p-2">
-            <Bell className="w-5 h-5" />
+            <Bell className="w-5 h-5 text-foreground" />
           </Button>
           <Button variant="ghost" size="sm" className="p-2">
-            <User className="w-5 h-5" />
+            <User className="w-5 h-5 text-foreground" />
           </Button>
         </div>
       </div>
