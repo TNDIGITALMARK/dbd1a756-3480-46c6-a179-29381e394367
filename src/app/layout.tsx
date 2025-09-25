@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "STREAMIFY",
+  description: "YouTube MVP - Video Sharing Platform",
 };
 
 export default function RootLayout({
